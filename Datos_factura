@@ -1,0 +1,61 @@
+
+package com.mycompany.epe2_luis_caraballo;
+
+
+public class Datos_factura extends Ventas{
+     
+    public String nombre_cli;
+    public String apellido_cli;
+    public String edad_cli;
+    public String rut_cli;
+    public String nombre_emp;
+    public String rut_emp;
+    public String giro_emp;
+    
+    
+    
+    
+    
+    public void Datos_factura(){
+        
+    }
+ 
+    public void guardadatosf(String nom_cli, String ape_cli, String edad_cli, String ru_cli,String nom_emp,String ru_emp,String gi_emp, double cant_ven, double total_ven, double gast, double iva1, double uti){
+    
+        
+        
+        this.nombre_cli=nom_cli;
+        this.apellido_cli=ape_cli;
+        this.edad_cli=edad_cli;
+        this.rut_cli=ru_cli;
+        this.nombre_emp=nom_emp;
+        this.rut_emp=ru_emp;
+        this.giro_emp=gi_emp;
+        
+        
+        String[] datos = {this.nombre_cli,this.apellido_cli,this.edad_cli,this.rut_cli,this.nombre_emp,this.rut_emp,this.giro_emp};
+        
+        if(this.nombre_cli=="" || this.apellido_cli=="" || this.edad_cli=="" || this.rut_cli=="" || this.nombre_emp=="" || this.rut_emp=="" || this.giro_emp=="" ){
+            System.out.println("no ingresaste datos en alguno de los campos");
+        }
+        
+        else{
+            for(int i=0;i<datos.length;i++){
+            
+            System.out.println("los datos del primer arreglo son "+datos[i]);
+        }
+        }
+        
+        
+       
+        
+        
+    
+    
+    
+    }
+    
+    
+    
+    
+}
