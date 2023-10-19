@@ -1,0 +1,60 @@
+package com.mycompany.epe2_luis_caraballo;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author luis2
+ */
+public class EPE2_Luis_Caraballo {
+
+    public static void main(String[] args) {
+        
+        Scanner scan_nom_cli = new Scanner(System.in);
+        Scanner scan_ape_cli = new Scanner(System.in);
+        Scanner scan_edad_cli = new Scanner(System.in);
+        Scanner scan_rut_cli = new Scanner(System.in);
+        Scanner scan_nombre_emp = new Scanner(System.in);
+        Scanner scan_rut_emp = new Scanner(System.in);
+        Scanner scan_giro_emp = new Scanner(System.in);
+        
+        System.out.println("Ingrese el nombre del cliente");
+        String nomcli = scan_nom_cli.nextLine();
+        
+        System.out.println("Ingrese el apellido del cliente");
+        String apecli = scan_ape_cli.nextLine();
+        
+        System.out.println("Ingrese la edad del cliente");
+        String edadcli = scan_edad_cli.nextLine();
+        
+        System.out.println("Ingrese el rut del cliente");
+        String rutcli = scan_rut_cli.nextLine();
+        
+        System.out.println("Ingrese el nombre de la empresa");
+        String nomemp = scan_nombre_emp.nextLine();
+        
+        System.out.println("Ingrese el rut de la empresa");
+        String rutemp = scan_rut_emp.nextLine();
+        
+        System.out.println("Ingrese el giro de la empresa");
+        String giroemp = scan_giro_emp.nextLine();
+     
+    Scanner scan_cant_ventas = new Scanner(System.in);
+        Scanner scan_total_ventas = new Scanner(System.in);
+        Scanner scan_gastos = new Scanner(System.in);
+
+        System.out.println("Ingrese la cantidad de ventas");
+        int cantven = scan_cant_ventas.nextInt();
+        
+        System.out.println("Ingrese el monto total de las ventas");
+        int totalven = scan_total_ventas.nextInt();
+        
+        System.out.println("Ingrese los gastos que se hicieron");
+        int gasto = scan_gastos.nextInt();
+        
+        Datos_factura factura = new Datos_factura();
+        factura.guardadatosf(nomcli, apecli, edadcli, rutcli, nomemp, rutemp, giroemp, 0, 0, 0, 0, 0);
+        factura.guardaventas(cantven, totalven, gasto, gasto, gasto);
+        
+    }
+}
