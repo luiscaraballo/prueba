@@ -1,0 +1,17 @@
+1)SEGÚN LO ENSEÑADO EN CLASES Y CON SUS PALABRAS EXPLIQUE: ¿QUE ES UNA EXCEPCIÓN Y CÓMO SE ABORDA?
+R :
+una excepcion es una parte del codiogo que se utiliza para encapsular una parte del codigo que creemos que podria tener algun error
+
+2) SEGÚN LO ENSEÑADO EN CLASES Y CON SUS PALABRAS EXPLIQUE: ¿QUE ES Y PARA QUE SIRVE LA PALABRA RESERVADA
+“FINALLY”?
+R :
+es un a palabra reservada que se utiliza al final de una excepcion para hacer que el codigo que este en "FINALLY" se ejecute independientemente del error
+
+3) SEGÚN LO ENSEÑADO EN CLASES Y CON SUS PALABRAS EXPLIQUE: ¿QUE ES UNA EXTENSIÓN DE CLASES Y A QUE OBEDECE
+EL CONCEPTO DE HERENCIA?
+R :
+se usa para enlazar 2 o mas clases, quedando una de estas clases como la clase padre, esta es la que vamos a llamar en el main, y las demas como clases hijo
+
+4) SEGÚN LO ENSEÑADO EN CLASES Y CON SUS PALABRAS EXPLIQUE: ¿CÓMO SE EJECUTA LA HERENCIA DE CLASES?
+R :
+para ejecutar la herencia primero se tiene que añadir un extends a una de las clases para que luego en el main podamos llamar a la clase hijo y a la clase padre de forma mas sencilla
